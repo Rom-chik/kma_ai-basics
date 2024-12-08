@@ -1,0 +1,179 @@
+{
+   "intents": [
+      {
+         "tag": "swearing",
+         "patterns": ["shit", "fuck", "wtf", "blya", "bitch", "fucking", "idiot", "stupid", "asshole", "whore", "hoe"],
+         "answers": ["Please avoid using harsh language like '*'. Let's stay on topic.", "Let's keep the conversation respectful.", "Let's focus on the emergency."],
+         "context_set": "",
+         "anti_context_set": "-"
+      },
+      {
+         "tag": "greeting",
+         "patterns": ["hi", "hello", "hey", "good evening", "nice to meet you", "howdy", "good morning"],
+         "answers": ["Hey! What's your emergency?", "*! Need first aid advice?", "*! How can I help you today?"],
+         "context_set": "",
+         "anti_context_set": "-"
+      },
+      {
+         "tag": "goodbye",
+         "patterns": ["bye", "see you later", "goodbye", "see you", "goodnight", "take care", "ttyl"],
+         "answers": ["Take care, and stay safe!", "Goodbye! Stay safe and healthy.", "See you! Always be prepared with first aid knowledge."],
+         "context_set": "",
+         "anti_context_set": "-"
+      },
+      {
+         "tag": "thanks",
+         "patterns": ["thanks", "thank you", "that's helpful", "appreciate it", "grateful", "that's all", "it is for today"],
+         "answers": ["Happy to help! Stay safe!", "Glad I could assist you. Stay prepared with first aid knowledge.", "You're welcome! I'm here if you need more advice."],
+         "context_set": "",
+         "anti_context_set": "-"
+      },
+      {
+         "tag": "emergency details req",
+         "patterns": ["sure", "emergency", "yes", "need advice", "need help"],
+         "answers": ["Provide as many details as possible. So I could help.", "It would be nice if you explain what happened.", "Any injuries?"],
+         "context_set": "",
+         "anti_context_set": "sure,"
+      },
+      {
+         "tag": "more details required",
+         "patterns": ["unconscious", "lost consciousness", "dying", "strange", "something happened", "attacked"],
+         "answers": ["Please, provide more details. Any of these.. Bleeding? Heart attack? Poisoning? Burn? Fracture?", "It would be nice if you explain in more words the situation. And injuries.", "I can't help if you dont provide more details about injuries."],
+         "context_set": "",
+         "anti_context_set": "-"
+      },
+      {
+         "tag": "ambulance / hospital needed",
+         "patterns": ["ambulance", "hospital", "need transfer", "need transportation", "paramedics", "need a doctor"],
+         "answers": ["Medical personnel are on their way to you. Location determined by gps signal and triangulation.", "Ambulance already on the way. Can you give some clues about injuries so I could help?"],
+         "context_set": "",
+         "anti_context_set": "-"
+      },
+      {
+         "tag": "bleeding",
+         "patterns": ["bleeding", "blood", "cut", "wound", "laceration", "injury", "gash", "hemorrhage"],
+         "answers": ["If you got *, apply pressure to the wound with a clean cloth and elevate it if possible. Seek medical help if the bleeding doesn't stop.", "Stop the bleeding by applying pressure to the * and clean the wound with water. Use a sterile bandage."],
+         "context_set": "",
+         "anti_context_set": "-"
+      },
+      {
+         "tag": "shooting",
+         "patterns": ["bullet", "bullets", "shot", "shooting", "shooter", "pistol", "ak", "rifle", "shoot"],
+         "answers": ["Don't take bullets out. Apply bandage to the wound, stop the bleeding."],
+         "context_set": "",
+         "anti_context_set": "-"
+      },
+      {
+         "tag": "blast",
+         "patterns": ["blast", "explosion", "rocket", "bomb", "detonation", "mine", "air strike"],
+         "answers": ["Ensure your safety to be ready for another *. Assess for injured people. For first aid, use the cABCDE method: catastrophic bleeding, Airway, Breathing, Circulation, Disability, Exposure."],
+         "context_set": "",
+         "anti_context_set": "-"
+      },
+      {
+         "tag": "burns",
+         "patterns": ["burn", "scald", "burnt", "fire", "heat", "skin", "boiled", "hot"],
+         "answers": ["Cool the burn under running water for at least 10 minutes. Avoid using ice. Cover with a sterile bandage.", "For minor burns, cool the area immediately and cover with a clean, non-stick dressing. Avoid breaking blisters."],
+         "context_set": "",
+         "anti_context_set": "-"
+      },
+      {
+         "tag": "allergic reaction",
+         "patterns": ["allergy", "allergic reaction", "anaphylaxis", "swollen", "rash", "itching", "isn't choking", "not choking", "doesn't choke"],
+         "answers": ["For severe allergic reactions, use an epinephrine auto-injector (EpiPen) if available and seek immediate medical help.", "Keep calm and monitor breathing. Use an EpiPen if necessary."],
+         "context_set": "",
+         "anti_context_set": "-"
+      },
+      {
+         "tag": "choking",
+         "patterns": ["choking", "choke", "airway", "blockage", "can't breathe", "obstruction", "blocked"],
+         "answers": ["If someone is choking, perform the Heimlich maneuver: stand behind them, wrap your arms around their waist, and press hard on the abdomen just above the navel.", "Encourage coughing if they can still breathe. If they can't, perform abdominal thrusts or back blows."],
+         "context_set": "",
+         "anti_context_set": "not choking"
+      },
+      {
+         "tag": "CPR",
+         "patterns": ["chest compressions", "heart stopped", "no pulse", "no breathing", "resuscitate", "doesn't beat", "heart beat", "beating"],
+         "answers": ["If you see no *. Start CPR with 30 chest compressions followed by two rescue breaths. Keep going until medical help arrives.", "Place the person on their back and begin chest compressions at a rate of 100-120 per minute in the center of the chest."],
+         "context_set": "",
+         "anti_context_set": "-"
+      },
+      {
+         "tag": "fracture",
+         "patterns": ["broken", "broke", "fell", "fracture", "bone", "bones", "fractured", "bone injury", "bone break", "splint", "dislocated", "arm", "leg"],
+         "answers": ["Immobilize the injured area and avoid moving the limb. Apply ice to reduce swelling and seek medical help.", "Use a splint to keep the bone stable and avoid realigning the bone. Seek medical attention immediately."],
+         "context_set": "",
+         "anti_context_set": "-"
+      },
+      {
+         "tag": "poisoning",
+         "patterns": ["poison", "ate something", "poisoning", "poisoned","swallowed poison", "toxins", "ingested something", "bad food", "mushrooms", "toxic", "chemical exposure"],
+         "answers": ["If poisoning from * is suspected, call 103 immediately. Avoid inducing vomiting unless instructed by professionals.", "Do not hesitate, try throwing out, drink a lot of liquid while waiting for medical help."],
+         "context_set": "",
+         "anti_context_set": "-"
+      },
+      {
+         "tag": "HEATstroke",
+         "patterns": ["overheat", "overheated", "nausea", "sun", "sauna", "bath", "closed in the car", "high temperature", "fever"],
+         "answers": ["Give injured a lot of water, try cool down him.", "Put moistened cloth on neck to lower the temperature."],
+         "context_set": "",
+         "anti_context_set": "-"
+      },
+      {
+         "tag": "sprain",
+         "patterns": ["sprain", "twist", "ankle", "wrist", "strained", "joint", "torn ligament"],
+         "answers": ["Rest the injured area, apply ice to reduce swelling, compress with an elastic bandage, and elevate the limb.", "Use the RICE method: Rest, Ice, Compression, and Elevation for sprains and strains."],
+         "context_set": "",
+         "anti_context_set": "-"
+      },
+      {
+         "tag": "heart attack",
+         "patterns": ["heart attack", "heart stroke", "chest pain", "tightness", "pain in arm", "short of breath", "cardiac arrest"],
+         "answers": ["If you suspect a heart attack, call 103 immediately. Help the person sit in a comfortable position to loosen up * and offer aspirin if available and they're not allergic.", "Keep the person calm and monitor their breathing until help arrives."],
+         "context_set": "",
+         "anti_context_set": "-"
+      },
+      {
+         "tag": "stroke",
+         "patterns": ["stroke", "face drooping", "clot", "slurred speech", "numbness", "one-sided weakness", "FAST"],
+         "answers": ["If someone shows signs of a stroke (face drooping, arm weakness, slurred speech), call 103 immediately and keep them calm.", "Follow the FAST method: Face drooping, Arm weakness, Speech difficulty, Time to call emergency services."],
+         "context_set": "",
+         "anti_context_set": "-"
+      },
+      {
+         "tag": "call 112 situations",
+         "patterns": ["can't handle", "don't know", "can't help", "serious condition", "life-threatening", "dying", "don't understand"],
+         "answers": ["If you're unsure what to do, call 112 and wait for professionals. It's better not to cause more harm.", "Call 112 for life-threatening situations and stay calm until help arrives."],
+         "context_set": "",
+         "anti_context_set": "-"
+      },
+      {
+         "tag": "wait for 112",
+         "patterns": ["anything else", "what else", "something else"],
+         "answers": ["If you're unsure what to do, wait for professionals. It's better not to cause more harm.", "You have done enough, stay calm until help arrives."],
+         "context_set": "",
+         "anti_context_set": "-"
+      },
+      {
+         "tag": "negative answers",
+         "patterns": ["no,", "he's okay", "it's fine", "don't think", "negative", "nothing from that"],
+         "answers": ["Than wait for paramedics.", "You have done enough, we sent helicopter for rescue.."],
+         "context_set": "",
+         "anti_context_set": "-"
+      },
+      {
+         "tag": "Patient understood the assignment.",
+         "patterns": ["okay", "okey", "got it", "ok", "I understood you"],
+         "answers": ["Ask anything if you need to.", "Feel free to ask for other advices."],
+         "context_set": "",
+         "anti_context_set": "-"
+      },
+      {
+         "tag": "Don't understand",
+         "patterns": ["ANYTHING THAT CAN NOT BE UNDERSTOOD"],
+         "answers": ["please, provide more details.", "explain in a few words your emergency", "provide convenient details about injuries"],
+         "context_set": "",
+         "anti_context_set": "-"
+      }
+   ]
+}
